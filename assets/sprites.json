@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "lxjs-1.png",
+	"frame": {"x":2,"y":2,"w":305,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":95},
+	"sourceSize": {"w":305,"h":95}
+},
+{
+	"filename": "lxjs-2.png",
+	"frame": {"x":309,"y":2,"w":305,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":95},
+	"sourceSize": {"w":305,"h":95}
+},
+{
+	"filename": "lxjs-3.png",
+	"frame": {"x":616,"y":2,"w":305,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":95},
+	"sourceSize": {"w":305,"h":95}
+},
+{
+	"filename": "lxjs-4.png",
+	"frame": {"x":2,"y":99,"w":305,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":95},
+	"sourceSize": {"w":305,"h":95}
+},
+{
+	"filename": "lxjs-5.png",
+	"frame": {"x":309,"y":99,"w":305,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":95},
+	"sourceSize": {"w":305,"h":95}
+},
+{
+	"filename": "lxjs-cup-1.png",
+	"frame": {"x":616,"y":99,"w":20,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":37},
+	"sourceSize": {"w":20,"h":37}
+},
+{
+	"filename": "lxjs-cup-2.png",
+	"frame": {"x":638,"y":99,"w":20,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":37},
+	"sourceSize": {"w":20,"h":37}
+},
+{
+	"filename": "lxjs-laptop.png",
+	"frame": {"x":660,"y":99,"w":57,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":38},
+	"sourceSize": {"w":57,"h":38}
+},
+{
+	"filename": "lxjs-rock.png",
+	"frame": {"x":2,"y":196,"w":485,"h":690},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":485,"h":690},
+	"sourceSize": {"w":485,"h":690}
+},
+{
+	"filename": "lxjs-star-1.png",
+	"frame": {"x":489,"y":196,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
+	"sourceSize": {"w":50,"h":50}
+},
+{
+	"filename": "lxjs-star-2.png",
+	"frame": {"x":541,"y":196,"w":50,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":50},
+	"sourceSize": {"w":50,"h":50}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "sprites.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1187059edce89dc0bc1cbbd5ec33098b:85ce5f5600522f0d98068c80db7b862b:1eabdf11f75e3a4fe3147baf7b5be24b$"
+}
+}
