@@ -4,7 +4,7 @@
 
 var GameState = function() { };
 
-var JUMP_SPEED = 50;
+var JUMP_SPEED = 300;
 var GRAVITY = 230;
 var HORIZONTAL_SPEED = 60;
 var MAX_SPEED = GRAVITY * 4;
@@ -39,19 +39,41 @@ function Hero(game, x, y) {
   this.body.collideWorldBounds = true;
 
   this.body.setSize(305, 80, 0, 7);
-
-  var spacekey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-  spacekey.onDown.add(this.swimup, this);
 }
 Hero.prototype = Object.create(Phaser.Sprite.prototype);
 Hero.prototype.constructor = Hero;
-Hero.prototype.swimup = function () {
-  if (this.body.velocity.y < MAX_SPEED) {
-    this.body.velocity.y -= JUMP_SPEED;
+Hero.prototype.update = function () {
+  this.body.acceleration.x = 0;
+  this.body.acceleration.y = 0;
+
+  if (this.deadFish) {
+    this.body.acceleration.y = -JUMP_SPEED;
+    return;
+  }
+
+  // handle input
+  var cursors = this.game.input.keyboard.createCursorKeys();
+  if (cursors.left.isDown) {
+    this.body.acceleration.x -= JUMP_SPEED;
+  } else if (cursors.right.isDown) {
+    this.body.acceleration.x += JUMP_SPEED;
+  }
+
+  if (cursors.up.isDown) {
+    this.body.acceleration.y -= JUMP_SPEED;
+  } else if (cursors.down.isDown) {
+    this.body.acceleration.y += JUMP_SPEED;
   }
 };
 Hero.prototype.boom = function () {
-  //TODO: handle the player colliding and dying
+  if (this.deadFish) { return; }
+  this.deadFish = true;
+  this.game.add.tween(this).to({
+    angle: 180,
+    alpha: 0.5
+  }, 2000, Phaser.Easing.Linear.None, true);
+  this.game.physics.arcade.gravity.x = 0;
+  this.animations.stop();
 };
 
 GameState.prototype = {
